@@ -5,14 +5,13 @@ for (let i = 15; i <= 25; i++) {
     }
 }
 
-//Question 2. 
-
+//Question 2
 const innerFunction = () => {
     console.log("I am a function")
 }
 
-const outerFunction = () => {
-
+const outerFunction = (param) => {
+    param()
 }
 
 outerFunction(innerFunction)
